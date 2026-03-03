@@ -13,7 +13,7 @@ A simple chess project coded in **Java** that follows all standard chess rules. 
 
 -----------------
 
-Java 17+ recommended
+JDK installed (Version 17 or higher recommended)
 
 -----------------------------------
 
