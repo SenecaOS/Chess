@@ -13,7 +13,9 @@ A simple chess project coded in **Java** that follows all standard chess rules. 
 
 -----------------
 
-JDK installed (Version 8 or higher recommended)
+Java 17+
+
+Linux users must have installed X11 runtime libraries
 
 -----------------------------------
 
