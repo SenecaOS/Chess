@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> 2f3cab684f5ea8170b087c55b81f3940ac396dc6
 package chess;
 
 import chess.model.Game;
