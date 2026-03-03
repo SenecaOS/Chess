@@ -9,19 +9,23 @@ A simple chess project coded in **Java** that follows all standard chess rules. 
 - **Castling** (king and queen side)
 
 ## Setup
-**PREREQUISITES**
+**PREREQUISITES:**
 
 -----------------
 
 JDK installed (Version 8 or higher recommended)
+
+-----------------------------------
 
 **STEPS:**
 
 1. **Download the project:** 
    
    git clone https://github.com/SenecaOS/Chess.git
-   
-2. **on Windows:**
+
+2. **Compile the project**   
+
+   **On Windows:**
 
    cd Chess/src
    
@@ -32,3 +36,7 @@ JDK installed (Version 8 or higher recommended)
 3. **Run the program:**
 
     java chess.Main
+
+4. **How to play**
+
+   For the full rules of chess see the rules section in [Chess Wikipedia Article](https://en.wikipedia.org/wiki/Chess).
