@@ -1,21 +1,15 @@
-# Compiled class files
+# Ignore compiled class files
 *.class
 
-# Logs
-*.log
+# Ignore build folders
+bin/
+out/
 
 # Eclipse project files
 *.classpath
 *.project
 *.settings/
 
-# Build folder
-bin/
-out/
-
 # OS-specific files
 .DS_Store
 Thumbs.db
-
-# Ignore temporary files
-*.tmp
