@@ -33,8 +33,8 @@ JDK installed (Version 8 or higher recommended)
    
    
    **on Linux/MAC:**
-   
-    javac chess/*.java chess/model/*.java chess/ui/*.java
+
+    javac $(find chess -name "*.java")
     
 4. **Run the program:**
 
