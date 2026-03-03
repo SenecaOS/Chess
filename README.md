@@ -23,20 +23,23 @@ JDK installed (Version 8 or higher recommended)
    
    git clone https://github.com/SenecaOS/Chess.git
 
-2. **Compile the project**   
+2. **Compile the project**
+
+   cd Chess/src
 
    **On Windows:**
 
-   cd Chess/src
+   javac chess\*.java chess\model\*.java chess\ui\*.java
+   
    
    **on Linux/MAC:**
    
     javac chess/*.java chess/model/*.java chess/ui/*.java
     
-3. **Run the program:**
+4. **Run the program:**
 
     java chess.Main
 
-4. **How to play**
+5. **How to play**
 
    For the full rules of chess see the rules section in [Chess Wikipedia Article](https://en.wikipedia.org/wiki/Chess).
