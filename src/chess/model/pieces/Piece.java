@@ -13,7 +13,7 @@ public class Piece {
 
 	boolean[][] legalMoves = new boolean[BOARD_SIZE][BOARD_SIZE];
 	protected Board board;
-	Piece [][] chessBoard;
+	Piece[][] chessBoard;
 	int row;
 	int col;
 	Game game;
@@ -27,8 +27,6 @@ public class Piece {
 
 	}
 
-	
-
 	public char getColor() {
 
 		return color;
@@ -36,13 +34,13 @@ public class Piece {
 	}
 
 	public int getRow() {
-		for(int row = 0; row<BOARD_SIZE; row++) {
-			for(int col = 0; col<BOARD_SIZE; col++) {
-				if(board.getBoard()[row][col] == this) {
+		for (int row = 0; row < BOARD_SIZE; row++) {
+			for (int col = 0; col < BOARD_SIZE; col++) {
+				if (board.getBoard()[row][col] == this) {
 					return row;
 				}
 			}
-			
+
 		}
 		return -1;
 	}
@@ -66,13 +64,13 @@ public class Piece {
 	}
 
 	public int getCol() {
-		for(int row = 0; row<BOARD_SIZE; row++) {
-			for(int col = 0; col<BOARD_SIZE; col++) {
-				if(board.getBoard()[row][col] == this) {
+		for (int row = 0; row < BOARD_SIZE; row++) {
+			for (int col = 0; col < BOARD_SIZE; col++) {
+				if (board.getBoard()[row][col] == this) {
 					return col;
 				}
 			}
-			
+
 		}
 		return -1;
 	}
@@ -91,21 +89,16 @@ public class Piece {
 		return new ImageIcon(getClass().getResource("/chess/images/" + fileName));
 
 	}
-	
-	
-	
-	
+
 	public boolean isValidMove(int row, int col) {
 		this.resetLegalMoves();
 		this.calculateLegalMoves();
-		
-		if(!this.isLegal(row, col)) {
+
+		if (!this.isLegal(row, col)) {
 			return false;
 		}
 		return true;
 	}
-	
-
 
 	public void calculateLegalMoves() {
 
@@ -122,7 +115,7 @@ public class Piece {
 				int r = row + dir[0] * i;
 				int c = col + dir[1] * i;
 
-				if (r >= BOARD_SIZE|| r < 0 || c >= BOARD_SIZE || c < 0) {
+				if (r >= BOARD_SIZE || r < 0 || c >= BOARD_SIZE || c < 0) {
 					break;
 				}
 				if (board.getBoard()[r][c] == null || board.getBoard()[r][c].getColor() != this.getColor()) {
@@ -175,4 +168,3 @@ public class Piece {
 		return hasMoved;
 	}
 }
-

@@ -7,7 +7,7 @@ public class Game {
 
 	boolean isWhitesTurn;
 	private Pawn doublePushedPawn;
-	int[] enpassantSquare = { -1, -1 };
+	int[] enpassantSquare = { -1, -1 }; //dummy values
 	private boolean promotionPending;
 	private int[] promotionSquare = new int[2];
 	private Pawn promotingPawn;
@@ -126,11 +126,14 @@ public class Game {
 	}
 
 	public void handlePromotion(Piece selectedPiece, int selectedRow, int selectedCol) {
+		setPromotingPawn(selectedPiece);
 		setPromotionSquare(selectedRow, selectedCol);
 		setPromotionPending(true);
 		setPromotionPawn((Pawn) selectedPiece);
+		
 
 	}
+
 
 	public Pawn getPromotingPawn() {
 		return promotingPawn;

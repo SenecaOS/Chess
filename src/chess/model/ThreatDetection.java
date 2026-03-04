@@ -9,7 +9,7 @@ import chess.model.pieces.Queen;
 import chess.model.pieces.Rook;
 
 public class ThreatDetection {
-	
+
 	public boolean isNotThreatenedByBishop(King king, Piece board[][], int row, int col) {
 
 		int[][] directions = { { 1, 1 }, { -1, -1 }, { 1, -1 }, { -1, 1 } };
@@ -41,7 +41,7 @@ public class ThreatDetection {
 
 		return true;
 	}
-	
+
 	public boolean isNotThreatenedByKnight(King king, Piece[][] board, int row, int col) {
 
 		int[][] knightMoves = { { 1, 2 }, { 2, 1 }, { -1, -2 }, { -2, -1 }, { -1, 2 }, { 2, -1 }, { 1, -2 },
@@ -61,7 +61,7 @@ public class ThreatDetection {
 		return true;
 
 	}
-	
+
 	public boolean isNotThreatenedByKing(King king, Piece[][] board, int row, int col) {
 
 		int[][] directions = { { 1, 1 }, { -1, -1 }, { 1, -1 }, { -1, 1 }, { 1, 0 }, { -1, 0 }, { 0, 1 }, { 0, -1 } };
@@ -82,7 +82,7 @@ public class ThreatDetection {
 		return true;
 
 	}
-	
+
 	public boolean isNotThreatenedByPawn(King king, Game game, Piece[][] board, int row, int col) {
 
 		int i = game.getTurn() == 'w' ? -1 : 1;
@@ -103,6 +103,7 @@ public class ThreatDetection {
 		return true;
 
 	}
+
 	public boolean isNotThreatenedByRook(King king, Piece[][] board, int row, int col) {
 
 		int[][] directions = { { 1, 0 }, { -1, 0 }, { 0, 1 }, { 0, -1 } };
@@ -134,7 +135,7 @@ public class ThreatDetection {
 		return true;
 
 	}
-	
+
 	public boolean isNonCheck(King king, Game game, Piece[][] board, int row, int col) {
 		return isNotThreatenedByKnight(king, board, row, col) && isNotThreatenedByRook(king, board, row, col)
 				&& isNotThreatenedByBishop(king, board, row, col) && isNotThreatenedByPawn(king, game, board, row, col)

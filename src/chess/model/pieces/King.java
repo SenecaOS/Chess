@@ -51,7 +51,7 @@ public class King extends Piece {
 		for (int[] dir : directions) {
 			int r = row + dir[0];
 			int c = col + dir[1];
-			if (r >= BOARD_SIZE|| r < 0 || c >= BOARD_SIZE|| c < 0) {
+			if (r >= BOARD_SIZE || r < 0 || c >= BOARD_SIZE || c < 0) {
 				continue;
 			}
 

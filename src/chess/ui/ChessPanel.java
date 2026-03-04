@@ -24,8 +24,9 @@ public class ChessPanel extends JPanel {
 
 	private static final Color LIGHT_BLUE = new Color(51, 153, 255);
 	private static final Color OVERLAY_COLOR = new Color(0, 0, 0, 125);
-	
-	private static final PromotionType[] PROMOTION_OPTIONS = {PromotionType.QUEEN, PromotionType.KNIGHT, PromotionType.ROOK, PromotionType.BISHOP};
+
+	private static final PromotionType[] PROMOTION_OPTIONS = { PromotionType.QUEEN, PromotionType.KNIGHT,
+			PromotionType.ROOK, PromotionType.BISHOP };
 	private static final int WIDTH = 480;
 	private static final int HEIGHT = 480;
 
@@ -147,7 +148,7 @@ public class ChessPanel extends JPanel {
 		for (int i = 0; i < 4; i++) {
 			int row = (game.getPromotionSquareRow() - i * direction);
 			int y = row * TILE_SIZE;
-			
+
 			g.setColor(Color.white);
 			g.fillRect(x, y, TILE_SIZE, TILE_SIZE);
 			ImageIcon icon = getIconForPromotingChoice(PROMOTION_OPTIONS[i]);
