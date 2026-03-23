@@ -28,9 +28,9 @@ JDK installed (Version 17 or higher recommended)
    cd Chess/src
 
    **On Windows:**
-
-  javac chess/*.java chess/model/*.java chess/ui/*.java
-   
+```bash
+   javac chess/*.java chess/model/*.java chess/ui/*.java
+   ```
    
    **on Linux/MAC:**
 
