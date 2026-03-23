@@ -29,7 +29,7 @@ JDK installed (Version 17 or higher recommended)
 
    **On Windows:**
 ```bash
-   javac chess/*.java chess/model/*.java chess/ui/*.java
+javac chess/*.java chess/model/*.java chess/ui/*.java
    ```
    
    **on Linux/MAC:**
